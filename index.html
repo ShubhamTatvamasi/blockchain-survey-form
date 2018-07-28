@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blockchain Survey Form</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body onload="setTimeout(startWeb3, 1000)">
+
+<div class="container">  
+<div id="contact">
+
+    <h3>Blockchain Survey Form</h3>
+    <h4>My Account: <b id="myaccount"></b></h4>
+    <h2>Question 1</h2>
+    <h4>Which rate of send did you use in your concrete? Answer: <b id="answer1"></b></h4>
+
+<div id="concretePercentage">
+      <input type="radio" name="concrete" value="31%" checked> 31%<br>
+      <input type="radio" name="concrete" value="34%"> 34%<br>
+      <input type="radio" name="concrete" value="More than 35%"> More than 35%<br>
+</div>
+
+    <h2>Question 2</h2>
+    <h4>Do this concrete served for the 1st floor? Answer: <b id="answer2"></b></h4>
+
+    <select id="concreteFloor">
+  <option value="1st Floor">1st Floor</option>
+  <option value="2nd Floor">2nd Floor</option>
+  <option value="3rd Floor">3rd Floor</option>
+  <option value="4rd Floor">4th Floor</option>
+    </select>
+
+    <h2>Question 3</h2>
+    <h4>Input your file hash here. Answer: <b id="answer3"></b></h4>
+
+      <input placeholder="0x0" type="tel" tabindex="3" id="fileHash">
+
+      <button type="submit" onclick="submitForm()">Submit</button>
+
+  </div>
+</div>
+
+    <script src="contract.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
